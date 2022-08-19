@@ -1,8 +1,10 @@
 @import 'line-awesome/dist/line-awesome/css/line-awesome.min.css';
-@import "./_theme_colors";
-@import "./_theme_custom";
-@import "./header";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "./_theme_colors";
+@import "./_theme_custom";
+@import "./header";
+@import "@glidejs/glide/src/assets/sass/glide.core";

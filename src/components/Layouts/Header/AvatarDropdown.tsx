@@ -44,9 +44,8 @@ export default function AvatarDropdown() {
                     {/* ------------------ 1 --------------------- */}
                     <Link
                       href={"/page-author"}
-                      className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                     >
-                      <>
+                      <a className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50">
                         <div className="flex items-center justify-center flex-shrink-0 text-neutral-500 dark:text-neutral-300">
                           <svg
                             width="24"
@@ -74,15 +73,14 @@ export default function AvatarDropdown() {
                         <div className="ml-4">
                           <p className="text-sm font-medium ">{"My Profile"}</p>
                         </div>
-                      </>
+                      </a>
                     </Link>
 
                     {/* ------------------ 2 --------------------- */}
                     <Link
                       href={"/nft-detailt"}
-                      className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                     >
-                      <>
+                      <a className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50">
                         <div className="flex items-center justify-center flex-shrink-0 text-neutral-500 dark:text-neutral-300">
                           <svg
                           width="24"
@@ -117,15 +115,14 @@ export default function AvatarDropdown() {
                         <div className="ml-4">
                             <p className="text-sm font-medium ">{"My Items"}</p>
                         </div>
-                      </>
+                      </a>
                     </Link>
 
                     {/* ------------------ 2 --------------------- */}
                     <Link
                       href={"/account"}
-                      className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                     >
-                      <>
+                      <a className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50">
                         <div className="flex items-center justify-center flex-shrink-0 text-neutral-500 dark:text-neutral-300">
                           <svg
                             width="24"
@@ -169,16 +166,15 @@ export default function AvatarDropdown() {
                         <div className="ml-4">
                           <p className="text-sm font-medium ">{"Edit profile"}</p>
                         </div>
-                      </>
+                      </a>
                     </Link>
 
                     <div className="w-full border-b border-neutral-200 dark:border-neutral-700" />
                     {/* ------------------ 2 --------------------- */}
                     <Link
                       href={"/##"}
-                      className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                     >
-                      <>
+                      <a className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50">
                         <div className="flex items-center justify-center flex-shrink-0 text-neutral-500 dark:text-neutral-300">
                           <svg
                             width="24"
@@ -234,15 +230,14 @@ export default function AvatarDropdown() {
                         <div className="ml-4">
                           <p className="text-sm font-medium ">{"Help"}</p>
                         </div>
-                      </>
+                      </a>
                     </Link>
 
                     {/* ------------------ 2 --------------------- */}
                     <Link
                       href={"/"}
-                      className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                     >
-                      <>
+                      <a className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50">
                         <div className="flex items-center justify-center flex-shrink-0 text-neutral-500 dark:text-neutral-300">
                           <svg
                             width="24"
@@ -277,7 +272,7 @@ export default function AvatarDropdown() {
                         <div className="ml-4">
                           <p className="text-sm font-medium ">{"Disconnect"}</p>
                         </div>
-                      </>
+                      </a>
                     </Link>
                   </div>
                 </div>

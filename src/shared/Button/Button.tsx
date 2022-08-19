@@ -64,10 +64,11 @@ const Button: FC<ButtonProps> = ({
       <Link
         href={href}
         target={targetBlank ? "_blank" : undefined}
-        className={`${CLASSES} `}
         rel="noopener noreferrer"
       >
-        {children || `This is Link`}
+        <a className={`${CLASSES} `}>
+          {children || `This is Link`}
+        </a>
       </Link>
     );
   }

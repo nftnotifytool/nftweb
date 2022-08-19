@@ -1,7 +1,5 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-const colors = require('tailwindcss/colors')
-
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
@@ -25,7 +23,6 @@ module.exports = {
 
     extend: {
       colors: {
-        ...colors,
         primary: {
           50: customColors("--c-primary-50"),
           100: customColors("--c-primary-100"),

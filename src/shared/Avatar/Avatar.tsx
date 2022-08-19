@@ -1,9 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import { avatarColors } from "contains/contants";
 import React, { FC } from "react";
 
 import { avatarImgs } from "contains/fakeData";
 import VerifyIcon from "components/VerifyIcon";
-import Image from "next/image";
 
 export interface AvatarProps {
   containerClassName?: string;
@@ -39,9 +39,9 @@ const Avatar: FC<AvatarProps> = ({
       style={{ backgroundColor: url ? undefined : _setBgColor(name) }}
     >
       {url && (
-        <Image
+        <img
           className={`absolute inset-0 w-full h-full object-cover ${radius}`}
-          src={url}
+          src={url.src}
           alt={name}
         />
       )}
