@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import logoImg from "images/logo.svg";
-import logoLightImg from "images/logo-light.svg";
-import Image from "next/image";
+import logoImg from "images/logo.png";
+import logoLightImg from "images/logo-light.png";
 import Link from "next/link";
 
 export interface LogoProps {
@@ -24,6 +23,7 @@ const Logo: React.FC<LogoProps> = ({
       {img ? (
         <img
           className={`block max-h-12 ${imgLight ? "dark:hidden" : ""}`}
+          style={{width: '180px'}}
           src={img.src}
           alt="Logo"
         />
@@ -33,6 +33,7 @@ const Logo: React.FC<LogoProps> = ({
       {imgLight && (
         <img
           className="hidden max-h-12 dark:block"
+          style={{width: '180px'}}
           src={imgLight.src}
           alt="Logo-Light"
         />

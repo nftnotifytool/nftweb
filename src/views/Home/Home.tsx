@@ -4,41 +4,46 @@ import SectionHero from "components/SectionHero/SectionHero";
 import { FC } from "react";
 import Vector1 from "images/Vector1.png";
 import SectionHowItWork from "components/SectionHowItWork/SectionHowItWork";
-import SectionLargeSlider from "./SectionLargeSlider";
+import SEO from "../../components/SEO";
+import SectionSubscribe from "../../components/SectionSubscribe";
+import SectionBecomeAnAuthor from "../../components/SectionBecomeAnAuthor";
+import BackgroundSection from "../../components/BackgroundSection";
+import SectionVideos from "../../components/SectionVideos";
 
 const PageHome: FC<any> = () => {
-  return (
-    <div className="nc-PageHome relative overflow-hidden">
-      <BgGlassmorphism />
-      <div className="container relative space-y-20 mt-12 mb-20 sm:space-y-24 sm:my-24 lg:space-y-32 lg:my-32">
-        <SectionHero
-          className="pb-10"
-          heading={
-            <span>
-              Discover 🖼
-              <br /> collect, and sell <br /> extraordinary {` `}
-              <span className="relative pr-3">
-                <img
-                  className="w-full absolute bottom-3 -left-1"
-                  src={Vector1.src}
-                  alt="Vector1"
-                />
-                <span className="relative">NFTs</span>
-              </span>
-            </span>
-          }
-        />
+    return (
+        <>
+            <SEO title="Page Home" description="hello" siteTitle="NFT"/>
+            <div className="nc-PageHome relative overflow-hidden">
+                <BgGlassmorphism />
+                <div
+                    className="container relative space-y-20 mt-12 mb-20 sm:space-y-24 sm:my-24 lg:space-y-32 lg:my-32">
+                    <SectionHero
+                        className="pb-10"
+                        heading={
+                            <span>
+                                Tracking price and news
+                                <span className="relative">NFTs</span>
+                            </span>
+                        }
+                    />
 
-        <SectionHowItWork />
-      </div>
+                    <SectionHowItWork />
+                </div>
+                <div className="container relative space-y-24 my-24 lg:space-y-32 lg:my-32">
+                    <SectionSubscribe />
+                    <div className="relative py-20 lg:py-24">
+                        <BackgroundSection />
+                        <SectionBecomeAnAuthor />
+                    </div>
 
-      <div className="bg-neutral-100/80 dark:bg-black/20 py-20 lg:py-32">
-        <div className="container">
-          <SectionLargeSlider />
-        </div>
-      </div>
-    </div>
-  )
+                    <SectionVideos />
+                </div>
+
+            </div>
+        </>
+
+    );
 }
 
 export default PageHome;

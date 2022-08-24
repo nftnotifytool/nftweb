@@ -1,13 +1,20 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
-const colors = require('tailwindcss/colors')
 
-/** @type {import('tailwindcss').Config} */
+// Custom color with css variable color in __theme_color.scss
+function customColors(cssVar) {
+  return ({ opacityVariable, opacityValue }) => {
+    if (opacityValue !== undefined) {
+      return `rgba(var(${cssVar}), ${opacityValue})`;
+    }
+    if (opacityVariable !== undefined) {
+      return `rgba(var(${cssVar}), var(${opacityVariable}, 1))`;
+    }
+    return `rgb(var(${cssVar}))`;
+  };
+}
+
 module.exports = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx}",
-    "./src/components/**/*.{js,ts,jsx,tsx}",
-    "./src/views/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: "class", // or 'media' or 'class',
   theme: {
     container: {
@@ -25,7 +32,6 @@ module.exports = {
 
     extend: {
       colors: {
-        ...colors,
         primary: {
           50: customColors("--c-primary-50"),
           100: customColors("--c-primary-100"),
@@ -74,16 +80,4 @@ module.exports = {
     require("@tailwindcss/line-clamp"),
     require("@tailwindcss/aspect-ratio"),
   ],
-}
-
-function customColors(cssVar) {
-  return ({ opacityVariable, opacityValue }) => {
-    if (opacityValue !== undefined) {
-      return `rgba(var(${cssVar}), ${opacityValue})`;
-    }
-    if (opacityVariable !== undefined) {
-      return `rgba(var(${cssVar}), var(${opacityVariable}, 1))`;
-    }
-    return `rgb(var(${cssVar}))`;
-  };
-}
+};

@@ -8,3 +8,6 @@
 @import "./_theme_custom";
 @import "./header";
 @import "@glidejs/glide/src/assets/sass/glide.core";
+html {
+  scroll-behavior: smooth;
+}

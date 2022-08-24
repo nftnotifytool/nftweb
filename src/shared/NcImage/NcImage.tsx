@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import React, {
   FC,
   ImgHTMLAttributes,
@@ -14,11 +13,11 @@ export interface NcImageProps extends ImgHTMLAttributes<HTMLImageElement> {
 }
 
 const NcImage: FC<NcImageProps> = ({
-  containerClassName = "",
-  alt = "nc-imgs",
-  src = "",
-  className = "object-cover w-full h-full",
-  ...args
+   containerClassName = "",
+   alt = "nc-imgs",
+   src = "",
+   className = "object-cover w-full h-full",
+   ...args
 }) => {
   const _containerRef = useRef(null);
   let _imageEl: HTMLImageElement | null = null;
@@ -65,28 +64,27 @@ const NcImage: FC<NcImageProps> = ({
 
   const renderLoadingPlaceholder = () => {
     return (
-      <div
-        className={`${className} flex items-center justify-center bg-neutral-200 dark:bg-neutral-6000 text-neutral-100 dark:text-neutral-500`}
-      >
-        <div className="h-2/4 max-w-[50%]">
-          <PlaceIcon />
+        <div
+            className={`${className} flex items-center justify-center bg-neutral-200 dark:bg-neutral-6000 text-neutral-100 dark:text-neutral-500`}
+        >
+          <div className="h-2/4 max-w-[50%]">
+            <PlaceIcon />
+          </div>
         </div>
-      </div>
     );
   };
-  console.log(__src);
   return (
-    <div
-      className={`nc-NcImage ${containerClassName}`}
-      data-nc-id="NcImage"
-      ref={_containerRef}
-    >
-      {__src && imageLoaded ? (
-        <img src={__src.src} className={className} alt={alt} {...args} />
-      ) : (
-        renderLoadingPlaceholder()
-      )}
-    </div>
+      <div
+          className={`nc-NcImage ${containerClassName}`}
+          data-nc-id="NcImage"
+          ref={_containerRef}
+      >
+        {__src && imageLoaded ? (
+            <img src={__src} className={className} alt={alt} {...args} />
+        ) : (
+            renderLoadingPlaceholder()
+        )}
+      </div>
   );
 };
 
