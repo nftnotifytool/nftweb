@@ -9,6 +9,10 @@ export interface SectionSubscribeProps {
     className?: string;
 }
 
+const redirectToWebsite = () => {
+    return window.location.href = 'https://discord.gg/EuDaF2Evqw';
+}
+
 const SectionSubscribe: FC<SectionSubscribeProps> = ({ className = "" }) => {
     return (
         <div
@@ -43,8 +47,9 @@ const SectionSubscribe: FC<SectionSubscribeProps> = ({ className = "" }) => {
                         rounded="rounded-full"
                     />
                     <ButtonCircle
-                        type="submit"
+                        type="button"
                         className="absolute transform top-1/2 -translate-y-1/2 right-1"
+                        onClick={redirectToWebsite}
                     >
                         <ArrowSmRightIcon className="w-6 h-6" />
                     </ButtonCircle>

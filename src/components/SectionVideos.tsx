@@ -40,16 +40,9 @@ const SectionVideos: FC<SectionVideosProps> = ({
                 title={video.title}
             >
                 {isPlay ? (
-                    <iframe
-                        src={`https://www.youtube.com/embed/${video.id}?autoplay=1${
-                            isSafariBrowser() ? "&mute=1" : ""
-                        }`}
-                        title={video.title}
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                        allowFullScreen
-                        className="rounded-3xl"
-                    ></iframe>
+                  <video width="100%" height="100%" controls autoplay>
+                    <source src="/video-intro.mp4" type="video/mp4" />
+                  </video>
                 ) : (
                     <>
                         <div

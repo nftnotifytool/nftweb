@@ -11,11 +11,11 @@ export interface SocialsList1Props {
 }
 
 const socials: SocialType[] = [
+  { name: "Twitter", icon: twitter, href: "https://twitter.com/nftnotifytool" },
   { name: "Facebook", icon: facebook, href: "#" },
   { name: "Vimeo", icon: vimeo, href: "#" },
   { name: "Youtube", icon: youtube, href: "#" },
   { name: "Telegram", icon: telegram, href: "#" },
-  { name: "Twitter", icon: twitter, href: "#" },
 ];
 
 const SocialsList1: FC<SocialsList1Props> = ({ className = "space-y-3" }) => {
