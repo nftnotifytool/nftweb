@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { FC } from "react";
 import ButtonCircle from "shared/Button/ButtonCircle";
 import rightImg from "images/SVG-subcribe2.png";

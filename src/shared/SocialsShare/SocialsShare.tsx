@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import React, { FC } from "react";
 
 export interface SocialsShareProps {
@@ -7,11 +8,17 @@ export interface SocialsShareProps {
 
 export interface SocialType {
   name: string;
+  icon: StaticImageData;
+  href: string;
+}
+
+export interface SocialShareType {
+  name: string;
   icon: string;
   href: string;
 }
 
-const socials: SocialType[] = [
+const socials: SocialShareType[] = [
   { name: "Facebook", icon: "lab la-facebook-f", href: "#" },
   { name: "Twitter", icon: "lab la-twitter", href: "#" },
   { name: "Linkedin", icon: "lab la-linkedin-in", href: "#" },
@@ -22,7 +29,7 @@ const SocialsShare: FC<SocialsShareProps> = ({
   className = "grid gap-[6px]",
   itemClass = "w-7 h-7 text-base hover:bg-neutral-100",
 }) => {
-  const renderItem = (item: SocialType, index: number) => {
+  const renderItem = (item: SocialShareType, index: number) => {
     return (
       <a
         key={index}

@@ -36,7 +36,7 @@ const SectionLargeSlider: FC<SectionLargeSliderProps> = ({
           <CardLarge1
             key={index}
             isShowing
-            featuredImgUrl={nftsLargeImgs[index]}
+            featuredImgUrl={nftsLargeImgs[index].src}
             onClickNext={handleClickNext}
             onClickPrev={handleClickPrev}
           />

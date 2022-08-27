@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import React, { FC } from "react";
 import rightImgDemo from "images/rightLargeImg.png";
 import rightLargeImgDark from "images/rightLargeImgDark.png";

@@ -40,7 +40,7 @@ const SectionVideos: FC<SectionVideosProps> = ({
                 title={video.title}
             >
                 {isPlay ? (
-                  <video width="100%" height="100%" controls autoplay>
+                  <video width="100%" height="100%" controls autoPlay>
                     <source src="/video-intro.mp4" type="video/mp4" />
                   </video>
                 ) : (

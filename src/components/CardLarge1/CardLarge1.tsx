@@ -117,7 +117,7 @@ const CardLarge1: FC<CardLarge1Props> = ({
             <NcImage
               containerClassName="aspect-w-1 aspect-h-1 relative"
               className="absolute inset-0 object-cover rounded-3xl sm:rounded-[40px] border-4 sm:border-[14px] border-white dark:border-neutral-800"
-              src={featuredImgUrl}
+              src={featuredImgUrl.toString()}
               alt={"title"}
             />
           </Link>

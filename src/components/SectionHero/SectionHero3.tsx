@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { FC } from "react";
 import ButtonPrimary from "shared/Button/ButtonPrimary";
 import imagePng from "images/hero3.png";
-import HeroSearchForm from "components/HeroSearchForm/HeroSearchForm";
 
 export interface SectionHero3Props {
   className?: string;
@@ -28,12 +28,11 @@ const SectionHero3: FC<SectionHero3Props> = ({ className = "" }) => {
             Start your search
           </ButtonPrimary>
         </div>
-        <HeroSearchForm className="mt-5 lg:mt-24 2xl:mt-40" />
       </div>
       <div className="relative aspect-w-4 aspect-h-3 sm:aspect-w-16 sm:aspect-h-9">
         <img
           className="absolute inset-0 object-cover rounded-[32px]"
-          src={imagePng}
+          src={imagePng.src}
           alt="hero"
         />
       </div>

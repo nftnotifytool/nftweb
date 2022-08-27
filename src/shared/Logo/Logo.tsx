@@ -3,10 +3,11 @@ import React from "react";
 import logoImg from "images/logo.png";
 import logoLightImg from "images/logo-light.png";
 import Link from "next/link";
+import { StaticImageData } from "next/image";
 
 export interface LogoProps {
-  img?: string;
-  imgLight?: string;
+  img?: StaticImageData;
+  imgLight?: StaticImageData;
   className?: string;
 }
 

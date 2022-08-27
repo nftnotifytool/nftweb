@@ -4,12 +4,13 @@ import React, { FC } from "react";
 
 import { avatarImgs } from "contains/fakeData";
 import VerifyIcon from "components/VerifyIcon";
+import { StaticImageData } from "next/image";
 
 export interface AvatarProps {
   containerClassName?: string;
   sizeClass?: string;
   radius?: string;
-  imgUrl?: string;
+  imgUrl?: StaticImageData;
   userName?: string;
   hasChecked?: boolean;
   hasCheckedClass?: string;
@@ -24,7 +25,7 @@ const Avatar: FC<AvatarProps> = ({
   hasChecked,
   hasCheckedClass = "w-4 h-4 bottom-1 -right-0.5",
 }) => {
-  const url = imgUrl || "";
+  const url = imgUrl;
   const name = userName || "John Doe";
   const _setBgColor = (name: string) => {
     const backgroundIndex = Math.floor(
