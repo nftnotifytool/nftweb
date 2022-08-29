@@ -18,9 +18,9 @@ export interface SectionVideosProps {
 const VIDEOS_DEMO: VideoType[] = [
     {
         id: "RzVvThhjAKw",
-        title: "Magical Scotland - 4K Scenic Relaxation Film with Calming Music",
+        title: "Tracking NFT Collections",
         thumbnail:
-            "https://images.unsplash.com/photo-1618172193622-ae2d025f4032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80",
+            "https://renderedvideos.renderforest.com/3220514_64077039/capture.png?queueId=62456653&Expires=1664064000&Key-Pair-Id=K2F1WC56RDW2LW&Signature=j%7EGw4V3hPx91Y87HPu5hhm2wu4f2mi9jY8%7EKFv7POiz0QKOjpEIFvnWHD8oa2acIO3NpHNMn4pKw7c5AZbZJRq9NDG7TnDKdRO9QBdKJ%7EIPPUMR3CA9wd9Q1ksxCsFN4259LgTTXCj5HxAftPgDsQVjusmrsSlHYGpKC7zMKz518ftEk8nQ2B-Lsfy3uwciivis6llZBKI3qhBpjIKg9E43qHRwkXXQwl-H50leA0LbK4dvN7ToZvIYJKfGvKq8X8zr9xRkVgn3rOs2fwinM76rXwoSyiODpGpl5jbh5UTdikdtFvYKdueC-fjrXjmCk3Eko7K%7Ee9-0g%7E%7E%7EglekrGw__",
     },
 ];
 

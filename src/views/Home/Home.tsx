@@ -27,7 +27,7 @@ const PageHome: FC<any> = () => {
                             </span>
                         }
                     />
-
+                    <SectionVideos />
                     <SectionHowItWork />
                 </div>
                 <div className="container relative space-y-24 my-24 lg:space-y-32 lg:my-32">
@@ -37,7 +37,6 @@ const PageHome: FC<any> = () => {
                         <SectionBecomeAnAuthor />
                     </div>
 
-                    <SectionVideos />
                 </div>
 
             </div>

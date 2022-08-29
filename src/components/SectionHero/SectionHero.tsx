@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { FC, ReactNode } from "react";
 import ButtonPrimary from "shared/Button/ButtonPrimary";
-import ButtonSecondary from "shared/Button/ButtonSecondary";
-import rightImg from "images/about-hero-right.png";
+import rightImg from "images/banner.png";
 import { SearchIcon } from "@heroicons/react/outline";
 
 export interface SectionHeroProps {
@@ -37,7 +36,7 @@ const SectionHero: FC<SectionHeroProps> = ({
           </div>
         </div>
         <div className="flex-grow">
-          <img className="w-full" src={rightImg.src} alt="" />
+          <img className="w-full" src={rightImg.src} alt="Banner" style={{width: '700px'}} />
         </div>
       </div>
     </div>
