@@ -22,8 +22,8 @@ const PageHome: FC<any> = () => {
                         className="pb-10"
                         heading={
                             <span>
-                                Tracking price and news
-                                <span className="relative">NFTs</span>
+                                Tracking NFT price and news
+                                <span className="relative"></span>
                             </span>
                         }
                     />

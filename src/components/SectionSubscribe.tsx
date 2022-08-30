@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { FC } from "react";
 import ButtonCircle from "shared/Button/ButtonCircle";
-import rightImg from "images/SVG-subcribe2.png";
+import rightImg from "images/early-birds.png";
 import Badge from "shared/Badge/Badge";
 import Input from "shared/Input/Input";
 import { ArrowSmRightIcon } from "@heroicons/react/outline";

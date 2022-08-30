@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { FC, ReactNode } from "react";
 import ButtonPrimary from "shared/Button/ButtonPrimary";
-import rightImg from "images/banner.png";
+import rightImg from "images/hero-banner.png";
 import { SearchIcon } from "@heroicons/react/outline";
 
 export interface SectionHeroProps {
@@ -12,7 +12,7 @@ export interface SectionHeroProps {
 
 const SectionHero: FC<SectionHeroProps> = ({
   className = "",
-  heading = "Tracking price and news",
+  heading = "Tracking NFT price and news",
   subHeading = "Notify news and price of NFT projects that you want to tracking",
 }) => {
   return (
@@ -30,7 +30,7 @@ const SectionHero: FC<SectionHeroProps> = ({
           </span>
           <div className="pt-7 flex  space-x-4">
             <ButtonPrimary href="#video">
-              <span className="">See your video</span>
+              <span className="">See our video</span>
               <SearchIcon className="w-5 h-5 ml-2.5" />
             </ButtonPrimary>
           </div>
