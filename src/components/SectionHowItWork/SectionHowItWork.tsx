@@ -2,10 +2,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { FC } from "react";
 import NcImage from "shared/NcImage/NcImage";
-import HIW1img from "images/HIW1img.png";
-import HIW2img from "images/HIW2img.png";
-import HIW3img from "images/HIW3img.png";
-import HIW4img from "images/HIW4img.png";
+import HIW1img from "images/steps/step1.png";
+import HIW2img from "images/steps/step2.png";
+import HIW3img from "images/steps/step3.png";
+import HIW4img from "images/steps/step4.png";
 import VectorImg from "images/VectorHIW.svg";
 import Badge from "shared/Badge/Badge";
 
@@ -19,29 +19,29 @@ const DEMO_DATA = [
     id: 1,
     img: HIW1img,
     imgDark: HIW1img,
-    title: "Filter & Discover",
-    desc: "Connect with wallet, discover, buy NTFs, sell your NFTs and earn money",
+    title: "Search NFT and price",
+    desc: "You can search name of NFT then set alert price",
   },
   {
     id: 2,
     img: HIW2img,
     imgDark: HIW2img,
-    title: "Connect wallet",
-    desc: "Connect with wallet, discover, buy NTFs, sell your NFTs and earn money",
+    title: "Get price alert",
+    desc: "Get the notification then go to marketplace and take profit",
   },
   {
     id: 3,
     img: HIW3img,
     imgDark: HIW3img,
-    title: "Start trading",
-    desc: "Connect with wallet, discover, buy NTFs, sell your NFTs and earn money",
+    title: "Get news alert",
+    desc: "Register and get the news, you will be the ealy birds",
   },
   {
     id: 4,
     img: HIW4img,
     imgDark: HIW4img,
-    title: "Earn money",
-    desc: "Connect with wallet, discover, buy NTFs, sell your NFTs and earn money",
+    title: " NFT report / insight",
+    desc: "Get the report everyday and you will see the big picture",
   },
 ];
 

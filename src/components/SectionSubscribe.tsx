@@ -23,9 +23,9 @@ const SectionSubscribe: FC<SectionSubscribeProps> = ({ className = "" }) => {
             <div className="flex-shrink-0 mb-10 lg:mb-0 lg:mr-10 lg:w-2/5">
                 <h2 className="font-semibold text-4xl">Join discord!</h2>
                 <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
-          Join discord to get the early bird role and has a slot to using first version of notify bot
+          Join discord to get the early bird role and has a chance to using the first version of notification bot
         </span>
-                <ul className="space-y-4 mt-10">
+        {/*        <ul className="space-y-4 mt-10">
                     <li className="flex items-center space-x-4">
                         <Badge name="01" />
                         <span className="font-medium text-neutral-700 dark:text-neutral-300">
@@ -38,7 +38,7 @@ const SectionSubscribe: FC<SectionSubscribeProps> = ({ className = "" }) => {
               Get premium magazines
             </span>
                     </li>
-                </ul>
+                </ul>*/}
                 <form className="mt-10 relative max-w-sm">
                     <Input
                         required
