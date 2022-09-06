@@ -13,10 +13,9 @@ export interface SocialsList1Props {
 
 const socials: SocialType[] = [
   { name: "Twitter", icon: twitter, href: "https://twitter.com/nftnotifytool" },
-  { name: "Facebook", icon: facebook, href: "#" },
-  { name: "Vimeo", icon: vimeo, href: "#" },
-  { name: "Youtube", icon: youtube, href: "#" },
-  { name: "Telegram", icon: telegram, href: "#" },
+  // { name: "Discord", icon: facebook, href: "https://discord.gg/EuDaF2Evqw" },
+  // { name: "Email", icon: vimeo, href: "mailto:support@nftnotify.xyz" },
+  // { name: "Telegram", icon: telegram, href: "https://t.me/NftPriceNotifyBot" },
 ];
 
 const SocialsList1: FC<SocialsList1Props> = ({ className = "space-y-3" }) => {

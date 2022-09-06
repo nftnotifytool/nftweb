@@ -31,7 +31,6 @@ const SectionHero: FC<SectionHeroProps> = ({
           <div className="pt-7 flex  space-x-4">
             <ButtonPrimary href="#video">
               <span className="">See our video</span>
-              <SearchIcon className="w-5 h-5 ml-2.5" />
             </ButtonPrimary>
           </div>
         </div>

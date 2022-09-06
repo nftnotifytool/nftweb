@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { FC } from "react";
-import ButtonCircle from "shared/Button/ButtonCircle";
+import ButtonPrimary from "shared/Button/ButtonPrimary";
 import rightImg from "images/early-birds.png";
 import Badge from "shared/Badge/Badge";
 import Input from "shared/Input/Input";
@@ -40,20 +40,14 @@ const SectionSubscribe: FC<SectionSubscribeProps> = ({ className = "" }) => {
                     </li>
                 </ul>*/}
                 <form className="mt-10 relative max-w-sm">
-                    <Input
-                        required
-                        aria-required
-                        placeholder="Enter your email"
-                        type="email"
-                        rounded="rounded-full"
-                    />
-                    <ButtonCircle
+                    <ButtonPrimary
                         type="button"
-                        className="absolute transform top-1/2 -translate-y-1/2 right-1"
+                        className="absolute transform top-1/2 -translate-y-1/2 left-1"
                         onClick={redirectToWebsite}
                     >
                         <ArrowSmRightIcon className="w-6 h-6" />
-                    </ButtonCircle>
+                        Join Discord
+                    </ButtonPrimary>
                 </form>
             </div>
             <div className="flex-grow">

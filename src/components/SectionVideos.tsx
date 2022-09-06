@@ -67,7 +67,7 @@ const SectionVideos: FC<SectionVideosProps> = ({
     return (
         <div className={`nc-SectionVideos ${className}`}>
             <Heading
-                desc="Check out our video introduction for more details."
+                desc="Check out our introduction video for more details."
             >
                 🎬 Video Introduction
             </Heading>
