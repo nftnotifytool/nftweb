@@ -13,7 +13,7 @@ import SectionVideos from "../../components/SectionVideos";
 const PageHome: FC<any> = () => {
     return (
         <>
-            <SEO title="Home" description="hello" siteTitle="NFT notify"/>
+            <SEO title="Home" description="hello" siteTitle="NFT Notify"/>
             <div className="nc-PageHome relative overflow-hidden">
                 <BgGlassmorphism />
                 <div
