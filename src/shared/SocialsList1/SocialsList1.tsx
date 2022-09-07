@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { SocialType } from "shared/SocialsShare/SocialsShare";
 import React, { FC } from "react";
-import facebook from "images/socials/facebook.svg";
+import discord from "images/socials/discord.svg";
 import vimeo from "images/socials/vimeo.svg";
 import twitter from "images/socials/twitter.svg";
 import telegram from "images/socials/telegram.svg";
@@ -13,9 +13,9 @@ export interface SocialsList1Props {
 
 const socials: SocialType[] = [
   { name: "Twitter", icon: twitter, href: "https://twitter.com/nftnotifytool" },
-  // { name: "Discord", icon: facebook, href: "https://discord.gg/EuDaF2Evqw" },
+  { name: "Discord", icon: discord, href: "https://discord.gg/EuDaF2Evqw" },
   // { name: "Email", icon: vimeo, href: "mailto:support@nftnotify.xyz" },
-  // { name: "Telegram", icon: telegram, href: "https://t.me/NftPriceNotifyBot" },
+  { name: "Telegram", icon: telegram, href: "https://t.me/NftPriceNotifyBot" },
 ];
 
 const SocialsList1: FC<SocialsList1Props> = ({ className = "space-y-3" }) => {
