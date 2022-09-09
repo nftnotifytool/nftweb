@@ -27,8 +27,8 @@ const PageHome: FC<any> = () => {
                             </span>
                         }
                     />
-                    <SectionVideos />
                     <SectionHowItWork />
+                    <SectionVideos />
                 </div>
                 <div className="container relative space-y-24 my-24 lg:space-y-32 lg:my-32">
                     <SectionSubscribe />
