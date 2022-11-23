@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import Logo from "shared/Logo/Logo";
+import Navigation from "shared/Navigation/Navigation";
 import SwitchDarkMode from "shared/SwitchDarkMode/SwitchDarkMode";
 const SiteHeader: FC<any> = () => {
   return (
@@ -11,6 +12,8 @@ const SiteHeader: FC<any> = () => {
           </div>
           <div className="flex-shrink-0 flex items-center justify-end text-neutral-700 dark:text-neutral-100 space-x-1">
             <div className="hidden items-center xl:flex space-x-2">
+              <Navigation />
+              <div className="hidden sm:block h-6 border-l border-neutral-300 dark:border-neutral-6000"></div>
               <div className="flex">
                 <SwitchDarkMode />
               </div>

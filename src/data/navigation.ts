@@ -109,14 +109,14 @@ const otherPageChildMenus: NavItemType[] = [
 export const NAVIGATION_DEMO_2: NavItemType[] = [
   {
     id: ncNanoId(),
-    href: "#",
-    name: "Discover",
-    type: "dropdown",
-    children: otherPageChildMenus,
+    href: "https://app.nftnotify.xyz/",
+    name: "Nfts In Wallet",
+    targetBlank: true,
   },
   {
     id: ncNanoId(),
-    href: "/#",
-    name: "Help center",
+    href: "https://docs.nftnotify.xyz/",
+    name: "Docs",
+    targetBlank: true,
   },
 ];
