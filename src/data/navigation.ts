@@ -110,7 +110,7 @@ export const NAVIGATION_DEMO_2: NavItemType[] = [
   {
     id: ncNanoId(),
     href: "https://app.nftnotify.xyz/",
-    name: "Nfts In Wallet",
+    name: "Tracking app (beta)",
     targetBlank: true,
   },
   {
